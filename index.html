@@ -9,12 +9,36 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-mono">
     <main>
         <h1 class="text-5xl mt-7 text-center">Welcome to <span class="text-rose-700 font-bold">baap er bank</span>!!!</h1>
         <!-- section money transript -->
-        <section>
-
+        <section class="grid grid-cols-3 mt-5 text-white w-3/4 mx-auto gap-3">
+            <div class="bg-[#916DB3] rounded-xl p-5">
+                <h2 class="text-4xl">Deposit</h2>
+                <h1 class="text-5xl">$<span>00</span></h1>
+            </div>
+            <div class="bg-[#E48586] rounded-xl p-5">
+                <h2 class="text-4xl">Withdraw</h2>
+                <h1 class="text-5xl">$<span>00</span></h1>
+            </div>
+            <div class="bg-[#FCBAAD] rounded-xl p-5">
+                <h2 class="text-4xl">Total</h2>
+                <h1 class="text-5xl">$<span>00</span></h1>
+            </div>
+        </section>
+        <!-- deposti and withdraw field -->
+        <section class="grid grid-cols-2 w-3/4 mx-auto gap-3 mt-5">
+            <div class="bg-[#B3C890] rounded-lg p-5">
+                <h3>Your deposit</h3>
+                <input id="deposit-input-fiels" class="w-3/4 p-2 rounded-md block" placeholder="$ Amount you want to deposit" type="text">
+                <button class="bg-[#5d5f47] hover:bg-green-300  text-white rounded mx-auto w-20 h-8 mt-3">Deposit</button>
+            </div>
+            <div class="bg-[#73A9AD] rounded-lg p-5">
+                <h3>Your Withdraw</h3>
+                <input id="withdraw-input-field" placeholder="$ Amount you want to withdraw" class="block w-3/4 p-2 rounded-md" type="text">
+                <button class="bg-[#2d3a3d] hover:bg-lime-600 text-white rounded mx-auto w-20 h-8 mt-3">Withdraw</button>
+            </div>
         </section>
     </main>
     <script src="js/login.js"></script>
